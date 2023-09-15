@@ -1,0 +1,117 @@
+/*inline block elements take only the needed space unlike block elements */
+/*to switch from inline block to block u type display:block; same for the reciprocal*/
+
+.thumbnail{
+    position:relative;
+}
+.thumbnailImg{
+    border-radius: 12px;
+    cursor: pointer;
+    transition: border-radius 0.20s;
+    width: 100%;
+
+}
+.videoContainer:hover {
+    .thumbnailImg{
+    border-radius: 0;}
+}
+.videoTime{
+    background: rgba(0, 0, 0, 0.79);
+    color:white;
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    font-family: Roboto,Arial;
+    padding:4px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.underThumbnail{
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: 36px 1fr;
+
+}
+
+.videos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 14px;
+    row-gap: 14px;
+}
+
+@media (max-width: 1750px) {
+    .videos {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 1750px) {
+    .videos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 1423px) {
+    .videos {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media (max-width: 1096px) {
+    .videos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.channelPicture{
+    margin-right: 10px;
+    border-radius: 50px;
+
+}
+.channelImg{
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.videoTitle {
+    line-height: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.channelName{
+    margin-top:10px;
+    color: #6e6e6e;
+    font-weight: normal;
+    cursor: pointer;
+}
+.viewsAndTime{
+    color: #6e6e6e;
+    font-weight: normal;
+}
+a,a :hover,a:active,a:visited
+{
+    text-decoration: none;
+    color:white;
+}
+.channel{
+    position:relative;
+}
+.channelINFO{
+    text-align: center;
+    position:absolute;
+    top:-50px;
+    padding:6px;
+    font-size: 15px;
+    color:white;
+    background: rgb(91, 91, 91);
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.channel:hover .channelINFO{
+    opacity:1;
+}

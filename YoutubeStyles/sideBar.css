@@ -1,0 +1,46 @@
+.SideBar{
+    background: #101010;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    position: fixed;
+    left:0;
+    top:50px;
+    bottom: 0;
+    width: 100px;
+    border-right-width:1px;
+    border-right-style:solid;
+    border-right-color: #232323;
+}
+.homeButton{
+    width: 80%;
+}
+.homeButton, .shortsButton, .subscriptionButton, .libraryButton{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height:90%;
+    font-family: Roboto, Arial;
+    align-items: center;
+    margin:10px 5px 10px 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #101010;
+    border-style:none;
+    border-radius: 14px;
+    color:white;
+    cursor:pointer;
+}
+.homeButton:hover, .shortsButton:hover,
+.subscriptionButton:hover, .libraryButton:hover{
+    background: #2a2a2a;
+}
+.subscriptionIcon{
+    width: 35%;
+    margin-bottom: 10px;
+}
+.homeIcon, .shortsIcon, .libraryIcon{
+    width: 35%;
+    margin-bottom: 6px;
+
+}
